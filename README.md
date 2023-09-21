@@ -21,6 +21,24 @@ plug_inst "zsh-users/zsh-history-substring-search"
 #plug_inst "zsh-users/zsh-completions"
 plug_inst "zyfax/zsh-prompt"
 ```
+Optional
+```zsh
+# zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^[OA' history-substring-search-up
+bindkey '^[OB' history-substring-search-down
+
+# Load and initialise completion system
+autoload -Uz compinit
+compinit
+
+# ZSH history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+```
 
 ### What needs to be done
 1. **Install Requirements**: Ensure that `zsh` and `git` are installed on your system.
