@@ -23,7 +23,8 @@ plug_inst "zyfax/zsh-prompt"
 ```
 
 ### What needs to be done
-1. Clone the My-ZSH repository to your local machine.
-2. Append the configuration lines to your .zshrc file.
-3. Install the desired plugins using the plug_inst command in the .zshrc file.
-4. Save the .zshrc file and restart your ZSH shell or run source .zshrc to apply the changes.
+1. **Install Requirements**: Ensure that `zsh` and `git` are installed on your system.
+2. **Clone the My-ZSH repository** to your local machine.
+3. **Modify .zshrc file**: Append the configuration lines provided above to your `.zshrc` file to initialize My-ZSH and specify the plugins to be installed.
+4. **Install Plugins**: The plugins specified in the `.zshrc` file will be installed when you restart your ZSH shell or run `source .zshrc`.
+5. **Save and Restart ZSH Shell**: After appending the configuration lines and installing the desired plugins, save the `.zshrc` file and restart your ZSH shell or run `source .zshrc` to apply the changes.
